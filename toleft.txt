@@ -1,0 +1,15 @@
+Vector database internals: FAISS, HNSW, and IVF are used to efficiently search high-dimensional embeddings without brute-force comparison.
+Brute-force cosine similarity does not scale because time grows linearly with data size, making it slow for large corpora.
+Vector databases trade speed vs recall by using approximate nearest neighbor search instead of exact search.
+
+Chunking strategy directly affects retrieval quality.
+Fixed chunking splits text by size, while semantic chunking splits by meaning or structure.
+Chunk size and overlap must be tuned to balance context preservation and noise.
+Poor chunking leads to irrelevant or incomplete retrieval.
+
+Retrieval quality is measured using precision@k, recall@k, and MRR.
+The value of k should be chosen based on retrieval performance, not arbitrarily.
+
+RAG can fail due to wrong but fluent retrieval, conflicting chunks, or document-based prompt injection.
+Dense retrievers use embeddings, sparse retrievers use keyword matching like BM25.
+Hybrid retrieval and cross-encoder re-ranking improve results when cosine similarity alone is insufficient.
