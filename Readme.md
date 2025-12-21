@@ -12,6 +12,7 @@ This repository contains concept-focused notes and hands-on notebooks covering t
 
 ### Hands-on Notebooks
 
+- **llm.ipynb** — LLM fundamentals: tokenization, embeddings, and text generation with GPT-2
 - **rag.ipynb** — Text preprocessing, vectorization, embedding intuition
 - **rag2.ipynb** — End-to-end RAG-style flow with retrieval + generation logic
 
