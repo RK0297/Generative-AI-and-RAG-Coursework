@@ -1,47 +1,35 @@
-# Retrieval Augmented Generation (RAG) — Foundations & Practice
+# Generative AI and RAG Coursework
 
-This repository contains concept-focused notes and hands-on notebooks covering the core ideas of Retrieval Augmented Generation (RAG), aimed at a DSAI student with an AI-first focus.
+Last Updated: May 18, 2026
 
-## Contents
+This repository contains concept-focused notes and hands-on notebooks covering the core ideas of Generative AI, Retrieval-Augmented Generation (RAG), and advanced agentic workflows.
 
-### Conceptual Notes (PDFs)
+## Directory Structure
 
-- **RAG-1.pdf** — Why RAG exists, core architecture, retrieval → augmentation → generation
-- **RAG-2.pdf** — Chunking, embeddings, vector databases, cosine similarity
-- **RAG-3.pdf** — Query-time retrieval, prompt augmentation, grounded generation
+### 01-BERT
+Foundational NLP models and architecture.
+- bert_fundamentals.ipynb: Tokenization, loading BERT, extracting hidden states, identifying NER, custom PyTorch structures.
+- bert_flashcards.html: Visual explanation of BERT encoder blocks, MLM, and NSP.
 
-### Hands-on Notebooks
+### 02-Basic-RAG-and-LLMs
+Core concepts for Prompting, generation, and basic similarity matching.
+- llm_generation_embeddings.ipynb: Exploring embeddings via APIs (OpenAI/OpenRouter) and generating text via local transformers like GPT-2.
+- rag_scratch_implementation.ipynb: Complete RAG loop implementation with pure math (cosine similarity, dot products) and basic API ingestion.
 
-- **llm.ipynb** — LLM fundamentals: tokenization, embeddings, and text generation with GPT-2
-- **rag.ipynb** — Text preprocessing, vectorization, embedding intuition
-- **rag2.ipynb** — End-to-end RAG-style flow with retrieval + generation logic
+### 03-Vector-Search
+(Coming Soon) Vector search algorithms, ChromaDB implementations, and FAISS.
 
-## What This Repository Covers Well
+### 04-Advanced-RAG
+(Coming Soon) LangChain, LangGraph orchestrations, retrieval evaluations, hybrid search, and production GenAI pipelines.
 
-- Motivation for RAG and its limitations vs plain LLMs
-- Offline ingestion vs online query-time pipeline
-- Chunking basics and overlap intuition
-- Embeddings and embedding matrix understanding
-- Cosine similarity and Top-K retrieval
-- Prompt augmentation for grounded generation
-- Clear separation of transformer embeddings vs RAG embeddings
+### 05-Miscellaneous
+Support scripts and testing directories.
 
-## What Is Intentionally Out of Scope (Next Level)
-
-- Vector database internals (FAISS, HNSW, IVF)
-- Chunking strategy optimization and semantic chunking
-- Retrieval evaluation metrics (precision@k, recall@k, MRR)
-- RAG failure modes and mitigation
-- Re-ranking and hybrid retrieval (BM25 + dense retrievers)
-
-These are planned as advanced extensions, not fundamentals.
+### Lectures
+Concept notes physically written and typed for learning.
+- rag_01_foundations_and_architecture.pdf: Why RAG exists, core architecture, and the retrieval-generation flow.
+- rag_03_query_time_retrieval.pdf: Query-time retrieval, prompt augmentation, and grounded generation.
 
 ## Learning Goal
 
-This repository focuses on building correct mental models first, followed by lightweight hands-on practice, without premature optimization or low-level training code.
-
-It is designed to be:
-
-- Conceptually strong
-- Exam and interview friendly
-- Ready to extend into production-grade RAG later
+This repository focuses on building correct mental models first, followed by lightweight hands-on practice, extending natively into production-grade pipelines.
