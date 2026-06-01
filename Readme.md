@@ -1,6 +1,6 @@
 # Generative AI and RAG Coursework
 
-Last Updated: May 18, 2026
+Last Updated: June 1, 2026
 
 This repository contains concept-focused notes and hands-on notebooks covering the core ideas of Generative AI, Retrieval-Augmented Generation (RAG), and advanced agentic workflows.
 
@@ -15,20 +15,22 @@ Foundational NLP models and architecture.
 Core concepts for Prompting, generation, and basic similarity matching.
 - llm_generation_embeddings.ipynb: Exploring embeddings via APIs (OpenAI/OpenRouter) and generating text via local transformers like GPT-2.
 - rag_scratch_implementation.ipynb: Complete RAG loop implementation with pure math (cosine similarity, dot products) and basic API ingestion.
+- hugging_face_ecosystem_walkthrough.ipynb: Walkthrough of the Hugging Face ecosystem.
+- Hugging_Face.pptx: Presentation on Hugging Face.
+- rag_01_foundations_and_architecture.pdf: Why RAG exists, core architecture, and the retrieval-generation flow.
+- rag_03_query_time_retrieval.pdf: Query-time retrieval, prompt augmentation, and grounded generation.
 
 ### 03-Vector-Search
-(Coming Soon) Vector search algorithms, ChromaDB implementations, and FAISS.
+Vector search algorithms, ChromaDB implementations, and FAISS.
+- chromadb_walkthrough.ipynb: Walkthrough of vector search using ChromaDB.
+- Vector_Search.pptx: Presentation on Vector Search concepts.
+- chroma_storage/: Local storage directory for Chroma databases.
 
 ### 04-Advanced-RAG
 (Coming Soon) LangChain, LangGraph orchestrations, retrieval evaluations, hybrid search, and production GenAI pipelines.
 
 ### 05-Miscellaneous
 Support scripts and testing directories.
-
-### Lectures
-Concept notes physically written and typed for learning.
-- rag_01_foundations_and_architecture.pdf: Why RAG exists, core architecture, and the retrieval-generation flow.
-- rag_03_query_time_retrieval.pdf: Query-time retrieval, prompt augmentation, and grounded generation.
 
 ## Learning Goal
 
