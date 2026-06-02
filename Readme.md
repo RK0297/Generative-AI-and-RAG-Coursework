@@ -1,6 +1,6 @@
 # Generative AI and RAG Coursework
 
-Last Updated: June 1, 2026
+Last Updated: June 2, 2026
 
 This repository contains concept-focused notes and hands-on notebooks covering the core ideas of Generative AI, Retrieval-Augmented Generation (RAG), and advanced agentic workflows.
 
@@ -30,7 +30,8 @@ Vector search algorithms, ChromaDB implementations, and FAISS.
 (Coming Soon) LangChain, LangGraph orchestrations, retrieval evaluations, hybrid search, and production GenAI pipelines.
 
 ### 05-Miscellaneous
-Support scripts and testing directories.
+Support scripts, testing directories, and complementary topics.
+- kafka_pyspark_streaming_walkthrough.ipynb: Real-time data pipelines using Apache Kafka and PySpark Streaming (Windows setup guide included).
 
 ## Learning Goal
 
