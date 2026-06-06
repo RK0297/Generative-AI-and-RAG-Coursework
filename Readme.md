@@ -35,7 +35,22 @@ Vector search algorithms, ChromaDB implementations, and similarity-based retriev
 - chroma_storage/: Local storage directory for Chroma databases.
 
 ### 04-Advanced-RAG-LangChain
-(Coming Soon) LangChain, LangGraph orchestrations, retrieval evaluations, hybrid search, and production GenAI pipelines.
+LangChain, LangGraph orchestrations, retrieval evaluations, hybrid search, and production GenAI pipelines.
+- graph_rag.ipynb: Graph-based RAG implementations using Neo4j and LangChain for knowledge graph retrieval.
+- advanced_rag_self_query.ipynb: Self-querying retrieval with metadata filtering and dynamic prompt construction.
+- chroma_db_basic/: Basic ChromaDB implementation with LangChain.
+- chroma_db_selfquery/: Self-query retrieval setup and examples.
+- KV_and_Graph_DB_Notes.pdf: Key-value stores, graph databases, and structured data retrieval patterns.
+
+**Note:** `Neo4jVector` import has moved. Use one of these approaches:
+```python
+# Option 1 (LangChain community)
+from langchain_community.vectorstores.neo4j_vector import Neo4jVector
+
+# Option 2 (Recommended - requires langchain-neo4j)
+from langchain_neo4j.vectorstores import Neo4jVector
+pip install langchain-neo4j
+```
 
 ### 05-Data-Engineering-and-Streaming
 Support scripts, real-time data processing, and complementary big data technologies.
