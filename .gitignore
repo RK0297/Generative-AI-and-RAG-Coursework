@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints and cache
+.ipynb_checkpoints/
+.virtual_documents/
+.ipynb/
+
+# Local Environment & Credentials (CRITICAL for hiding your API keys)
+.env
+.env.local
+*.env
+secrets.toml
+
+# Virtual Environments (Local python installations)
+venv/
+.venv/
+env/
+ENV/
+dist/
+build/
+*.egg-info/
+
+# Local Vector Databases & Storage
+# (Prevents pushing heavy Chroma binary files or sqlite databases to Git)
+chroma_db/
+chroma_db_basic/
+chroma_db_selfquery/
+*.db
+*.sqlite3
+
+# Operating System files
+.DS_Store
+Thumbs.db
