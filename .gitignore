@@ -29,8 +29,14 @@ build/
 chroma_db/
 chroma_db_basic/
 chroma_db_selfquery/
+chroma_storage/
 *.db
 *.sqlite3
+
+# Model Training Artifacts
+# (LoRA adapter checkpoints, optimizer states — too large for Git)
+outputs/
+results/
 
 # Operating System files
 .DS_Store

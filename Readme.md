@@ -1,10 +1,10 @@
 # Generative AI and RAG Fundamentals
 
-Last Updated: June 3, 2026
+Last Updated: June 7, 2026
 
 Comprehensive coursework covering Generative AI, Retrieval-Augmented Generation (RAG) systems, and production-grade pipelines. This repository contains concept-focused notes, hands-on notebooks, and resources for building correct mental models before extending into enterprise AI applications.
 
-**Tags:** `generative-ai`, `rag`, `llm`, `nlp`, `vector-search`, `chromadb`, `bert`, `langchain`, `ai-engineering`, `machine-learning`
+**Tags:** `generative-ai`, `rag`, `llm`, `nlp`, `vector-search`, `chromadb`, `bert`, `langchain`, `ai-engineering`, `machine-learning`, `peft`, `lora`, `qlora`, `fine-tuning`
 
 ## Directory Structure
 
@@ -32,14 +32,15 @@ Vector search algorithms, ChromaDB implementations, and similarity-based retriev
 - chromadb_walkthrough.ipynb: Walkthrough of vector search using ChromaDB.
 - Vector_Search_Fundamentals.pptx: Presentation on vector search concepts and applications.
 - Chunking_Hybrid_RAG_Evaluation.pdf: Advanced chunking strategies, hybrid RAG approaches, and retrieval evaluation metrics.
-- chroma_storage/: Local storage directory for Chroma databases.
 
 ### 04-Advanced-RAG-LangChain
-LangChain, LangGraph orchestrations, retrieval evaluations, hybrid search, and production GenAI pipelines.
-- graph_rag.ipynb: Graph-based RAG implementations using Neo4j and LangChain for knowledge graph retrieval.
-- advanced_rag_self_query.ipynb: Self-querying retrieval with metadata filtering and dynamic prompt construction.
-- chroma_db_basic/: Basic ChromaDB implementation with LangChain.
-- chroma_db_selfquery/: Self-query retrieval setup and examples.
+LangChain orchestrations, retrieval evaluations, guardrails, and parameter-efficient fine-tuning.
+- 01_rag_knowledge_graph_neo4j.ipynb: Graph-based RAG using Neo4j and LangChain for knowledge graph retrieval.
+- 02_advanced_rag_self_query.ipynb: Self-querying retrieval with metadata filtering and dynamic prompt construction.
+- 03_rag_evaluation.ipynb: RAG pipeline evaluation using RAGAS metrics (faithfulness, relevancy, context precision).
+- 04_chatbot_evaluation.ipynb: Evaluating conversational AI systems with automated metrics.
+- 05_llm_guardrails.ipynb: Implementing safety guardrails for LLM applications (input/output validation, content filtering).
+- 06_lora_qlora_peft_finetuning.ipynb: Complete LoRA, QLoRA, and PEFT fine-tuning pipeline with OPT-350M on WikiText-2. Includes architecture diagrams, weight freezing, gradient checkpointing, and adapter management.
 - KV_and_Graph_DB_Notes.pdf: Key-value stores, graph databases, and structured data retrieval patterns.
 
 **Note:** `Neo4jVector` import has moved. Use one of these approaches:
@@ -65,7 +66,7 @@ Support scripts, real-time data processing, and complementary big data technolog
 2. **BERT & NLP Foundations** → Build NLP mental models with transformers
 3. **RAG & LLM Fundamentals** → Master retrieval-augmented generation concepts
 4. **Vector Search & Retrieval** → Implement efficient semantic search
-5. **Advanced RAG** → Production-grade orchestration and optimization
+5. **Advanced RAG & Fine-Tuning** → Production-grade orchestration, evaluation, guardrails, and LoRA/QLoRA fine-tuning
 6. **Data Engineering** → Build scalable data pipelines
 
 ## Learning Goal
