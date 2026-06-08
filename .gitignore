@@ -38,6 +38,10 @@ chroma_storage/
 outputs/
 results/
 
-# Operating System files
+# Operating System & Office temp files
 .DS_Store
 Thumbs.db
+~$*
+
+# Experiment tracking
+wandb/
