@@ -1,0 +1,57 @@
+# =============================================================================
+# Generative AI and RAG Coursework — Python Dependencies
+# =============================================================================
+# Install all: pip install -r requirements.txt
+# Tested with Python 3.12
+# =============================================================================
+
+# ── Core ML & NLP ──────────────────────────────────────────────────────────────
+torch
+transformers
+datasets
+tokenizers
+sentence-transformers
+accelerate
+einops
+
+# ── LLM Fine-Tuning (LoRA / QLoRA / PEFT) ─────────────────────────────────────
+peft
+trl
+bitsandbytes
+
+# ── LangChain Ecosystem ───────────────────────────────────────────────────────
+langchain
+langchain-core
+langchain-community
+langchain-classic
+langchain-openai
+langchain-groq
+langchain-huggingface
+langchain-text-splitters
+langchain-experimental
+langchain-chroma
+langchain-neo4j
+langgraph
+
+# ── Vector Databases ──────────────────────────────────────────────────────────
+chromadb
+neo4j
+
+# ── LLM APIs & Observability ──────────────────────────────────────────────────
+openai
+langsmith
+wandb
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv
+tiktoken
+lark
+requests
+huggingface-hub
+pydantic
+
+# ── Visualization ─────────────────────────────────────────────────────────────
+yfiles-jupyter-graphs
+
+# ── Data Engineering (Module 05 — requires separate Java/Kafka setup) ─────────
+pyspark
